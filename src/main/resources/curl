@@ -4,7 +4,7 @@ For PowerShell too
 curl --header "Content-Type: application/json" --request POST --data "{\"name\": \"tester\", \"password\": \"123\"}" http://localhost:8081/auth
 
 Сохранить сообщение
-curl --header "Content-Type: application/json" --header "Authorization: Bearer_eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0ZXIiLCJpYXQiOjE2NTk5MjQ5NTcsImV4cCI6MTY2MDAxMTM1N30.kfPKcTFozWPDEdzpzgghctzA9ldnaBxcbxZIJa-LNNs" --request GET --data "{\"name\": \"1\", \"message\": \"curl message\"}" http://localhost:8081/message
+curl --header "Content-Type: application/json" --header "Authorization: Bearer_eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0ZXIiLCJpYXQiOjE2NjAwNjIyODQsImV4cCI6MTY2MDE0ODY4NH0.0xdr_a9LWSm6eCJ-sO7HQp59-laeSY4dDEhrHqvAmuA" --request GET --data "{\"name\": \"1\", \"message\": \"curl message\"}" http://localhost:8081/message
 
 Получить последние 10 сообщений из БД
-curl --header "Content-Type: application/json" --header "Authorization: Bearer_eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0ZXIiLCJpYXQiOjE2NTk5MjQ5NTcsImV4cCI6MTY2MDAxMTM1N30.kfPKcTFozWPDEdzpzgghctzA9ldnaBxcbxZIJa-LNNs" --request GET --data "{\"name\": \"1\", \"message\": \"history 10\"}" http://localhost:8081/message
+curl --header "Content-Type: application/json" --header "Authorization: Bearer_eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0ZXIiLCJpYXQiOjE2NjAwNjIyODQsImV4cCI6MTY2MDE0ODY4NH0.0xdr_a9LWSm6eCJ-sO7HQp59-laeSY4dDEhrHqvAmuA" --request GET --data "{\"name\": \"1\", \"message\": \"history 10\"}" http://localhost:8081/message
