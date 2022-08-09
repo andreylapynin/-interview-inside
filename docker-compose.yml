@@ -10,14 +10,17 @@ services:
     depends_on:
       - db
     environment:
-     - spring.datasource.url=jdbc:postgresql://host.docker.internal:5432/postgres
+     - spring.datasource.url=jdbc:postgresql://host.docker.internal:5433/postgres
   db:
     container_name: postgres
     hostname: postgres
     image: postgres:13.3
     restart: always
     environment:
+      POSTGRES_DB: "postgres"
       POSTGRES_USER: "postgres"
       POSTGRES_PASSWORD: "pass"
     ports:
-      - "5432:5432"
+      - "5433:5432"
+    volumes:
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
